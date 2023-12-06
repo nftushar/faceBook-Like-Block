@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Like and Share Buttons</title>
+</head>
+
+<body>
+    <div class="main">
+        <script>
+            // Your dynamic URL logic here
+            var dynamicUrl = "https://www.facebook.com/profile.php?id=100076228742365";
+
+            // Dynamic colorscheme, layout, width, and height
+            var dynamicColorscheme = "dark"; // or "light" based on user preference or condition
+            var dynamicLayout = "box_count"; // or "button_count" based on your requirements
+            var dynamicWidth = 250; // Set your dynamic width based on conditions
+            var dynamicHeight = 300; // Set your dynamic height based on conditions
+
+            var likeButtonHtml = '<iframe src="https://www.facebook.com/plugins/like.php?href=' + dynamicUrl +
+                '&layout=' + dynamicLayout +
+                '&show_faces=false&action=like&font=verdana&colorscheme=' + dynamicColorscheme +
+                '" allowtransparency="true" style="border: none; overflow: hidden; width: ' + dynamicWidth +
+                'px; height: ' + dynamicHeight + 'px;" frameborder="0" scrolling="no" data-width="' + dynamicWidth +
+                '" data-height="' + dynamicHeight + '"></iframe>';
+
+            var shareButtonHtml = '<iframe src="https://www.facebook.com/plugins/share_button.php?href=' + dynamicUrl +
+                '&layout=button&size=large&width=100&height=30&appId=" width="100" height="30" style="border:none;overflow:hidden;" ' +
+                'scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
+
+            document.write(likeButtonHtml);
+            document.write(shareButtonHtml);
+        </script>
+    </div>
+</body>
+
+</html>
