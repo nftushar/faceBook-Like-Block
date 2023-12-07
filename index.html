@@ -5,34 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Like and Share Buttons</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            gap: 10px;
+        }
+
+        .like-button,
+        .share-button {
+            border: none;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .like-button:hover,
+        .share-button:hover {
+            transform: scale(1.05);
+        }
+
+        .button-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="main">
-        <script>
-            // Your dynamic URL logic here
-            var dynamicUrl = "https://www.facebook.com/profile.php?id=100076228742365";
+    <div class="button-container">
+        <div class="like-button">
+            <script>
+                var dynamicUrl = "https://www.facebook.com/profile.php?id=100076228742365";
+                var dynamicLayout = "box_count";
+                var dynamicColorscheme = "dark";
+                var dynamicWidth = 250;
+                var dynamicHeight = 60; // Increased the height for better visibility
 
-            // Dynamic colorscheme, layout, width, and height
-            var dynamicColorscheme = "dark"; // or "light" based on user preference or condition
-            var dynamicLayout = "box_count"; // or "button_count" based on your requirements
-            var dynamicWidth = 250; // Set your dynamic width based on conditions
-            var dynamicHeight = 300; // Set your dynamic height based on conditions
+                var likeButtonHtml = '<iframe src="https://www.facebook.com/plugins/like.php?href=' + dynamicUrl +
+                    '&layout=' + dynamicLayout +
+                    '&show_faces=false&action=like&font=verdana&colorscheme=' + dynamicColorscheme +
+                    '" allowtransparency="true" style="border: none; overflow: hidden; width: ' + dynamicWidth +
+                    'px; height: ' + dynamicHeight + 'px;" frameborder="0" scrolling="no" data-width="' + dynamicWidth +
+                    '" data-height="' + dynamicHeight + '"></iframe>';
+                document.write(likeButtonHtml);
+            </script>
+        </div>
 
-            var likeButtonHtml = '<iframe src="https://www.facebook.com/plugins/like.php?href=' + dynamicUrl +
-                '&layout=' + dynamicLayout +
-                '&show_faces=false&action=like&font=verdana&colorscheme=' + dynamicColorscheme +
-                '" allowtransparency="true" style="border: none; overflow: hidden; width: ' + dynamicWidth +
-                'px; height: ' + dynamicHeight + 'px;" frameborder="0" scrolling="no" data-width="' + dynamicWidth +
-                '" data-height="' + dynamicHeight + '"></iframe>';
-
-            var shareButtonHtml = '<iframe src="https://www.facebook.com/plugins/share_button.php?href=' + dynamicUrl +
-                '&layout=button&size=large&width=100&height=30&appId=" width="100" height="30" style="border:none;overflow:hidden;" ' +
-                'scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
-
-            document.write(likeButtonHtml);
-            document.write(shareButtonHtml);
-        </script>
+        <div class="share-button">
+            <script>
+                var shareButtonHtml = '<iframe src="https://www.facebook.com/plugins/share_button.php?href=' + dynamicUrl +
+                    '&layout=button&size=large&width=100&height=30&appId=" width="100" height="30" style="border:none;overflow:hidden;" ' +
+                    'scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
+                document.write(shareButtonHtml);
+            </script>
+        </div>
     </div>
 </body>
 
