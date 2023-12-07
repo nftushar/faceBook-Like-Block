@@ -14,7 +14,7 @@ const Edit = (props) => {
   return <>
     <Settings attributes={attributes} setAttributes={setAttributes} />
 
-    <div className={className} id={`bBlocks-map-block-${clientId}`}>
+    <div className={className} id={`bBlocks-fb-button-${clientId}`}>
       {!isSelected && <div className="mouse"></div>}
       <Style attributes={attributes} clientId={clientId} />
       <FbButton attributes={attributes} clientId={clientId} />

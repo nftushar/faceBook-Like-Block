@@ -11,7 +11,7 @@ const Style = ({ attributes, clientId }) => {
   const { rotateX, rotateY, rotateZ, rotateDuration, rotateDelay } = rotate;
   const { scaleX, scaleY } = scale;
 
-  const mainSl = `#bBlocks-map-block-${clientId}`;
+  const mainSl = `#bBlocks-fb-button-${clientId}`;
   const containerSl = `${mainSl} .mapContainer`
   const customEmbedSl = `${containerSl}  .custom-embed`;
   const frameSl = `${customEmbedSl} #mapFrame`;
@@ -28,7 +28,7 @@ const Style = ({ attributes, clientId }) => {
           }
         }   
 
-        #bBlocks-map-block-${clientId} {
+        #bBlocks-fb-button-${clientId} {
           display: grid;
           justify-content: center;
       }
@@ -38,7 +38,7 @@ const Style = ({ attributes, clientId }) => {
         justify-content: ${alignment};
       }
 
-        ${mainSl} .bBlocks-map-block { 
+        ${mainSl} .bBlocks-fb-button { 
           box-shadow:${getMultiShadowCSS(shadow)};
 
         }

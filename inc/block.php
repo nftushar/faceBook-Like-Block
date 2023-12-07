@@ -26,7 +26,7 @@ class MapBlockDirectory{
 		$blockClassName = "wp-block-b-blocks-map-block $className align$align";
 
 		ob_start(); ?>
-		<div class='<?php echo esc_attr( $blockClassName ); ?>' id='bBlocks-map-block-<?php echo esc_attr( $cId ) ?>' data-attributes='<?php echo esc_attr( wp_json_encode( $attributes ) ); ?>'></div>
+		<div class='<?php echo esc_attr( $blockClassName ); ?>' id='bBlocks-fb-button-<?php echo esc_attr( $cId ) ?>' data-attributes='<?php echo esc_attr( wp_json_encode( $attributes ) ); ?>'></div>
 
 		<?php return ob_get_clean();
 	} // Render
