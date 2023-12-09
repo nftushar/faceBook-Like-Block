@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 function FbButton({ attributes }) {
-    const { fbUrl, btnType, layout, clrScheme, size, shareOffOn,showFaces } = attributes;
+    const { fbUrl, btnType, layout, clrScheme, size, shareOffOn, showFaces } = attributes;
 
     // console.log(shareOffOn);
 
@@ -16,7 +16,7 @@ function FbButton({ attributes }) {
 
         setButtonHtml(buttonHtml);
     }, [layout, clrScheme, btnType, shareOffOn, showFaces]); // Include btnType in the dependency array
- 
+
 
 
     return (

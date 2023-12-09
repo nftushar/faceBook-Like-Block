@@ -205,7 +205,7 @@ msgstr ""
 
 #: inc/block.json
 msgctxt "block description"
-msgid "Easy-to-use, responsive fb-button"
+msgid "Easy-to-use, responsive facebook-button"
 msgstr ""
 
 #: inc/block.json
