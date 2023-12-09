@@ -1,24 +1,23 @@
 import React, { useEffect, useState } from 'react';
 
-function FbButton() {
+function FbButton({ attributes }) {
+    const { fbUrl, layout, clrScheme, size, border } = attributes;
+
+    // console.log(attributes.layout);
     const [likeButtonHtml, setLikeButtonHtml] = useState('');
     const [shareButtonHtml, setShareButtonHtml] = useState('');
 
     useEffect(() => {
-        const dynamicUrl = "https://www.facebook.com/profile.php?id=100076228742365";
-        const dynamicLayout = "box_count";
-        const dynamicColorscheme = "dark";
-        const dynamicWidth = 250;
-        const dynamicHeight = 60;
+        const Width = 85;
+        const Height = 60;
 
-        const likeHtml = `<iframe src="https://www.facebook.com/plugins/like.php?href=${dynamicUrl}&layout=${dynamicLayout}&size=large&show_faces=false&action=like&font=verdana&colorscheme=${dynamicColorscheme}" allowtransparency="true" style="border: none; overflow: hidden; width: ${dynamicWidth}px; height: ${dynamicHeight}px;" frameborder="0" scrolling="no" data-width="${dynamicWidth}" data-height="${dynamicHeight}"></iframe>`;
+        const likeHtml = `<iframe id="likeButton" src="https://www.facebook.com/plugins/like.php?href=${fbUrl}&layout=${layout}&size=${size}&show_faces=false&action=like&font=verdana&&amp;color_scheme=${clrScheme}"&amp;allowtransparency="true" style="border: none; overflow: hidden; width: ${Width}px; height: ${Height}px;" frameborder="10" scrolling="no" data-width="${Width}" data-height="${Height}"></iframe>`;
 
-
-        const shareHtml = `<iframe src="https://www.facebook.com/plugins/share_button.php?href=${dynamicUrl}&layout=button&size=large&colorscheme=${dynamicColorscheme}&width=100&height=30&appId=" style="border:none;overflow:hidden;width:${dynamicWidth}px;height:${dynamicHeight}px;" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+        const shareHtml = `<iframe id="shareButton" src="https://www.facebook.com/plugins/share_button.php?href=${fbUrl}&layout=${layout}&color_scheme=dark&amp;color_scheme=${clrScheme}&amp;width=100&height=30&appId=&amp;size=small&amp;size=${size}" style="border:none;overflow:hidden;width:${Width}px;height:${Height}px;" scrolling="no" data-width="${Width}" data-height="${Height}" frameborder="10" allowtransparency="true" allow="encrypted-media"></iframe>`;
 
         setLikeButtonHtml(likeHtml);
         setShareButtonHtml(shareHtml);
-    }, []);
+    }, [layout, clrScheme]);
 
     return (
         <div className="fb-button-container">

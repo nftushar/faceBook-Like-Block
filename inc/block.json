@@ -1,15 +1,15 @@
 {
   "apiVersion": "1",
-  "name": "b-blocks/map-block",
-  "title": "map-block",
-  "description": "Easy-to-use, responsive map-block",
+  "name": "b-blocks/fb-button",
+  "title": "fb-button",
+  "description": "Easy-to-use, responsive fb-button",
   "category": "widgets",
   "keywords": [
-    "map-block",
+    "fb-button",
     "map",
     "Gutenberg"
   ],
-  "textdomain": "map-block",
+  "textdomain": "fb-button",
   "attributes": {
     "align": {
       "type": "string",
@@ -31,13 +31,21 @@
       "type": "string",
       "default": "center"
     },
-    "width": {
-      "type": "string",
-      "default": "600px"
+    "fbUrl":{
+      "type":"string",
+      "default":"https://www.facebook.com/profile.php?id=100076228742365"
     },
-    "height": {
+    "layout": {
       "type": "string",
-      "default": "500px"
+      "default": "button"
+    },
+    "clrScheme":{
+      "type":"string",
+      "default":"dark"
+    },
+    "size":{
+      "type":"string",
+      "default":"large"
     },
     "background": {
       "type": "object",

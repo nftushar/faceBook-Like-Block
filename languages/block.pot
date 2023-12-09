@@ -2,8 +2,8 @@
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Map Block 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/map-block\n"
+"Project-Id-Version: FB Button 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/fb-button\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,14 +12,14 @@ msgstr ""
 "POT-Creation-Date: 2023-11-29T09:29:30+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
-"X-Domain: map-block\n"
+"X-Domain: fb-button\n"
 
 #. Plugin Name of the plugin
-msgid "Map Block"
+msgid FB Button"
 msgstr ""
 
 #. Description of the plugin
-msgid "responsive map block for wordpress and more.."
+msgid "responsive fb button for wordpress and more.."
 msgstr ""
 
 #. Author of the plugin
@@ -200,17 +200,17 @@ msgstr ""
 
 #: inc/block.json
 msgctxt "block title"
-msgid "map-block"
+msgid "fb-button"
 msgstr ""
 
 #: inc/block.json
 msgctxt "block description"
-msgid "Easy-to-use, responsive map-block"
+msgid "Easy-to-use, responsive fb-button"
 msgstr ""
 
 #: inc/block.json
 msgctxt "block keyword"
-msgid "map-block"
+msgid "fb-button"
 msgstr ""
 
 #: inc/block.json

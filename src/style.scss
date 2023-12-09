@@ -8,6 +8,10 @@ body {
   align-items: center;
   height: 100vh;
 }
+.pluginFontVerdana div{
+  display: flex;
+  justify-content: center;
+}
 // .pluginSkinLight, .pluginFontHelvetica,
 // .pluginSkinDark, .pluginFontVerdana{
   // 4080ff Follow  | 1877f2  1877f2
@@ -29,6 +33,7 @@ body {
 //     transform: scale(1.05);
 //   }
 // }
+
 
 .fb-button-container iframe {
   width: 100%;

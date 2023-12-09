@@ -1,7 +1,7 @@
-=== Map Block ===
+=== FB Button ===
 Contributors:  
 Donate link: https://gum.co/wpdonate/
-Tags: fb-button, fb, button 
+Tags: fb-button, FB, button 
 Requires at least: 5.0+
 Tested up to: 6.4.2
 Stable tag: 1.0.0
@@ -16,7 +16,7 @@ Short Description
 Large Description
 
 
-**[Demos](https://bblockswp.com/demo/map-block/)**
+**[Demos](https://bblockswp.com/demo/fb-button/)**
 
 
 = Features =
@@ -24,8 +24,8 @@ Large Description
 
 
 = How to use =
-- First, install the map-block plugin
-- Add the map-block block from the block category called "Widgets" in the Gutenberg editor.
+- First, install the fb-button plugin
+- Add the fb-button block from the block category called "Widgets" in the Gutenberg editor.
 - You can change block settings from the right-side settings sidebar.
 - Enjoy!
 
@@ -58,25 +58,25 @@ Large Description
 
 = From Gutenberg Editor: =
 1. Go to the WordPress Block/Gutenberg Editor
-2. Search For **map-block**
-3. Click on the **map-block** to add the block
+2. Search For **fb-button**
+3. Click on the **fb-button** to add the block
 
 = Download & Upload: =
-1. Download the **map-block** plugin (*.zip file*)
+1. Download the **fb-button** plugin (*.zip file*)
 2. In your admin area, go to the Plugins menu and click on **Add New**
-3. Click on **Upload Plugin** and choose the **`map-block.zip`** file and click on **Install Now**
+3. Click on **Upload Plugin** and choose the **`fb-button.zip`** file and click on **Install Now**
 4. Activate the plugin and Enjoy!
 
 = Manually: =
-1. Download and upload the **map-block** plugin to the **`/wp-content/plugins/`** directory
+1. Download and upload the **fb-button** plugin to the **`/wp-content/plugins/`** directory
 2. Activate the plugin through the Plugins menu in WordPress
 
 
 == Frequently Asked Questions ==
 
-= Is map-block free? =
+= Is fb-button free? =
 
-Yes, map-block is a free Gutenberg block plugin.
+Yes, fb-button is a free Gutenberg block plugin.
 
 = Does it work with any WordPress theme? =
 
@@ -92,12 +92,12 @@ You can use unlimited times as you want.
 
 = Where can I get support? =
 
-You can post your questions on the [support forum here](https://wordpress.org/support/plugin/map-block/)
+You can post your questions on the [support forum here](https://wordpress.org/support/plugin/fb-button/)
 
 
 == Screenshots ==
 
-1. map-block
+1. fb-button
 2. Settings
 
 
