@@ -73,55 +73,6 @@
         "bottom": "5px",
         "left": "5px"
       }
-    },
-    "border": {
-      "type": "object",
-      "default": {
-        "radius": "5px"
-      }
-    },
-    "filters": {
-      "type": "object",
-      "default": {
-        "blur": 0,
-        "brightness": 100,
-        "contrast": 100,
-        "saturate": 100,
-        "hue": 1
-      }
-    },
-    "hovFilters": {
-      "type": "object",
-      "default": {
-        "blur": 0,
-        "brightness": 60,
-        "contrast": 150,
-        "saturate": 200,
-        "hue": 10
-      }
-    },
-    "floating": {
-      "type": "object",
-      "default": {
-        "enabled": false,
-        "translate": {
-          "translateX": 15.8239,
-          "translateY": 1.08383,
-          "duration": 1000,
-          "delay": 0
-        },
-        "rotate": {
-          "rotateX": -21.5199,
-          "rotateY": 9.75444,
-          "rotateZ": -36.4564,
-          "rotateDuration": 1000,
-          "rotateDelay": 0
-        },
-        "scale": {
-          "scaleX": 0.803472,
-          "scaleY": 1.04335
-        }
-      }
     }
   },
   "supports": {

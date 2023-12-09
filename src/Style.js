@@ -11,12 +11,7 @@ const Style = ({ attributes, clientId }) => {
   return (
     <style dangerouslySetInnerHTML={{
       __html: `      
-      
-
-         ${mainSl} {
-          display: grid;
-          justify-content: center;
-      }
+       
      
       ${mainSl}{
         display: grid;
