@@ -46,7 +46,7 @@
     "shareOffOn": {
       "type": "string",
       "default": "true"
-    },
+    },    
     "clrScheme": {
       "type": "string",
       "default": "dark"
