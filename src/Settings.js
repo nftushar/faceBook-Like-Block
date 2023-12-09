@@ -14,7 +14,7 @@ const mapAlignments = [
 ];
 
 const Settings = ({ attributes, setAttributes }) => {
-	const { background, filters, hovFilters, padding, zoom, height, width, border, alignment, btnType, fbUrl, layout, clrScheme, size, shareOffOn } = attributes;
+	const { background, filters, hovFilters, padding, zoom, height, width, border, alignment, btnType, fbUrl, layout, clrScheme, size, shareOffOn, showFaces } = attributes;
 
 	// console.log(btnType); 
 
@@ -32,17 +32,27 @@ const Settings = ({ attributes, setAttributes }) => {
 						className="bPlPanelBody"
 						title={__("Map", "fb-button")} 	>
 						<TextControl
+							className="mt20"
 							label={__("FaceBook", "fb-button")}
 							value={fbUrl}
 							onChange={(val) => setAttributes({ fbUrl: val })}
 						/>
 						<ToggleControl
+							className="mt20"
 							label={__("Share Button", "map-block")}
 							value={shareOffOn}
 							checked={shareOffOn}
-							onChange={(val) => setAttributes({ shareOffOn: val })} 
+							onChange={(val) => setAttributes({ shareOffOn: val })}
+						/>
+						<ToggleControl
+							className="mt20"
+							label={__("Show Faces", "map-block")}
+							value={showFaces}
+							checked={showFaces}
+							onChange={(val) => setAttributes({ showFaces: val })}
 						/>
 						<SelectControl
+							className="mt20"
 							label="Layout"
 							value={layout}
 							options={[
@@ -54,6 +64,7 @@ const Settings = ({ attributes, setAttributes }) => {
 							onChange={(val) => setAttributes({ layout: val })}
 							isIcon={true} />
 						<SelectControl
+							className="mt20"
 							label="Button Type"
 							value={btnType}
 							options={[
@@ -63,6 +74,7 @@ const Settings = ({ attributes, setAttributes }) => {
 							onChange={(val) => setAttributes({ btnType: val })}
 							isIcon={true} />
 						<SelectControl
+							className="mt20"
 							label="Color Scheme"
 							value={clrScheme}
 							options={[
@@ -72,6 +84,7 @@ const Settings = ({ attributes, setAttributes }) => {
 							onChange={(val) => setAttributes({ clrScheme: val })}
 							isIcon={true} />
 						<SelectControl
+							className="mt20"
 							label="Size"
 							value={size}
 							options={[
