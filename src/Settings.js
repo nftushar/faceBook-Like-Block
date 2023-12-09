@@ -14,9 +14,9 @@ const mapAlignments = [
 ];
 
 const Settings = ({ attributes, setAttributes }) => {
-	const { background, filters, hovFilters, padding, zoom, height, width, border, alignment, fbUrl, layout, clrScheme, size } = attributes;
+	const { background, filters, hovFilters, padding, zoom, height, width, border, alignment,   btnType, fbUrl, layout, clrScheme, size } = attributes;
 
-	// console.log(scaleY);
+	// console.log(btnType);
 
 	const updateObj = (attr, key, val, nestKey = false) => {
 		const newObj = produce(attributes[attr], draft => {
@@ -57,6 +57,15 @@ const Settings = ({ attributes, setAttributes }) => {
 								{ label: 'Button Count', value: 'button_count' },
 							]}
 							onChange={(val) => setAttributes({ layout: val })}
+							isIcon={true} />
+						<SelectControl
+							label="Button Type"
+							value={btnType}
+							options={[
+								{ label: "Like", value: "like" },
+								{ label: "Recommend", value: "recommend" },
+							]}
+							onChange={(val) => setAttributes({ btnType: val })}
 							isIcon={true} />
 						<SelectControl
 							label="Color Scheme"

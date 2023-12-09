@@ -18,7 +18,7 @@
     "cId": {
       "type": "string",
       "default": ""
-    }, 
+    },
     "location": {
       "type": "string",
       "default": "Dhaka"
@@ -31,21 +31,29 @@
       "type": "string",
       "default": "center"
     },
-    "fbUrl":{
-      "type":"string",
-      "default":"https://www.facebook.com/profile.php?id=100076228742365"
+    "fbUrl": {
+      "type": "string",
+      "default": "https://www.facebook.com/profile.php?id=100076228742365"
+    },
+    "btnType": {
+      "type": "string",
+      "default": "recommend"
     },
     "layout": {
       "type": "string",
       "default": "button"
     },
-    "clrScheme":{
-      "type":"string",
-      "default":"dark"
+    "shareOffOn": {
+      "type": "string",
+      "default": "true"
     },
-    "size":{
-      "type":"string",
-      "default":"large"
+    "clrScheme": {
+      "type": "string",
+      "default": "dark"
+    },
+    "size": {
+      "type": "string",
+      "default": "large"
     },
     "background": {
       "type": "object",
