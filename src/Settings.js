@@ -2,10 +2,9 @@
 // import { useState } from 'react';
 import { __ } from "@wordpress/i18n";
 import { InspectorControls } from "@wordpress/block-editor";
-import { PanelBody, TabPanel, TextControl, RangeControl, __experimentalBoxControl as BoxControl, ToggleControl, SelectControl } from "@wordpress/components";
+import { PanelBody, TabPanel, TextControl, __experimentalBoxControl as BoxControl, ToggleControl, SelectControl } from "@wordpress/components";
 
-import { Background, BorderControl, BtnGroup } from "../../Components";
-import { produce } from 'immer';
+import { BtnGroup } from "../../Components";
 
 const mapAlignments = [
 	{ label: __('left', 'fb-button'), value: 'left', icon: 'editor-alignleft' },
@@ -14,7 +13,7 @@ const mapAlignments = [
 ];
 
 const Settings = ({ attributes, setAttributes }) => {
-	const { background, filters, hovFilters, padding, zoom, height, width, border, alignment, btnType, fbUrl, layout, clrScheme, size, shareOffOn, showFaces } = attributes;
+	const { padding, alignment, btnType, fbUrl, layout, clrScheme, size, shareOffOn, showFaces } = attributes;
 
 	// console.log(btnType); 
 
@@ -30,7 +29,7 @@ const Settings = ({ attributes, setAttributes }) => {
 				{(tab) => <>
 					{tab.name === "general" && <PanelBody
 						className="bPlPanelBody"
-						title={__("Map", "fb-button")} 	>
+						title={__("FaceBook Button", "fb-button")} 	>
 						<TextControl
 							className="mt20"
 							label={__("FaceBook", "fb-button")}
@@ -39,14 +38,14 @@ const Settings = ({ attributes, setAttributes }) => {
 						/>
 						<ToggleControl
 							className="mt20"
-							label={__("Share Button", "map-block")}
+							label={__("Share Button", "fb-button")}
 							value={shareOffOn}
 							checked={shareOffOn}
 							onChange={(val) => setAttributes({ shareOffOn: val })}
 						/>
 						<ToggleControl
 							className="mt20"
-							label={__("Show Faces", "map-block")}
+							label={__("Show Faces", "fb-button")}
 							value={showFaces}
 							checked={showFaces}
 							onChange={(val) => setAttributes({ showFaces: val })}
@@ -57,7 +56,7 @@ const Settings = ({ attributes, setAttributes }) => {
 							value={layout}
 							options={[
 								{ label: 'Button', value: 'button' },
-								{ label: 'standard', value: 'standard' },
+								{ label: 'Standard', value: 'standard' },
 								{ label: 'Box Count', value: 'box_count' },
 								{ label: 'Button Count', value: 'button_count' },
 							]}
@@ -102,20 +101,11 @@ const Settings = ({ attributes, setAttributes }) => {
 							title={__("Button Control", "fb-button")}>
 
 							<BtnGroup
-								className="mt20"
+								className="mb20"
 								label={__("Alignment", "fb-button")}
 								value={alignment}
 								onChange={val => setAttributes({ alignment: val })}
 								options={mapAlignments} isIcon={true} />
-
-							<Background
-								className='mt20 mb20'
-								label={__('Background', 'fb-button')}
-								value={background}
-								onChange={(val) => setAttributes({ background: val })}
-								defaults={{ color: '#000' }}
-							/>
-
 							<BoxControl
 								label={__("Padding", "fb-button")}
 								values={padding}
