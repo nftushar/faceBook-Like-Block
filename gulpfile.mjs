@@ -18,7 +18,7 @@ export const bundle = () => gulp.src([
 	'!todo.txt',
 	'!webpack.config.js'
 ]).pipe(
-	zip('Fb-button.zip')
+	zip('facebook-button-wp.zip')
 ).pipe(
 	gulp.dest('bundled')
 );

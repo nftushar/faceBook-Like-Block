@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const { cId } = attributes;
 
         createRoot(mapEl).render(
-            <>
+            <> 
                 <div id={`bBlocks-fb-button-${cId}`} >
                     <Style attributes={attributes} clientId={cId} />
                     <FbButton attributes={attributes} clientId={cId} />

@@ -1,15 +1,15 @@
 {
   "apiVersion": "1",
-  "name": "b-blocks/fb-button",
-  "title": "fb-button",
-  "description": "Easy-to-use, responsive facebook-button",
+  "name": "b-blocks/facebook-button-wp",
+  "title": "facebook-button-wp",
+  "description": "Easy-to-use, responsive facebook-button-wp",
   "category": "widgets",
   "keywords": [
-    "fb-button",
+    "facebook-button-wp",
     "map",
     "Gutenberg"
   ],
-  "textdomain": "fb-button",
+  "textdomain": "facebook-button-wp",
   "attributes": {
     "align": {
       "type": "string",
@@ -23,17 +23,13 @@
       "type": "string",
       "default": "Dhaka"
     },
-    "zoom": {
-      "type": "number",
-      "default": 10
-    },
     "alignment": {
       "type": "string",
       "default": "center"
     },
     "fbUrl": {
       "type": "string",
-      "default": "https://www.facebook.com/profile.php?id=100076228742365"
+      "default": "https://www.facebook.com/bPluginsLLC"
     },
     "btnType": {
       "type": "string",
@@ -41,7 +37,7 @@
     },
     "layout": {
       "type": "string",
-      "default": "button"
+      "default": "box_count"
     },
     "shareOffOn": {
       "type": "string",
@@ -68,10 +64,10 @@
     "padding": {
       "type": "object",
       "default": {
-        "top": "5px",
-        "right": "5px",
-        "bottom": "5px",
-        "left": "5px"
+        "top": "20px",
+        "right": "20px",
+        "bottom": "20px",
+        "left": "20px"
       }
     }
   },

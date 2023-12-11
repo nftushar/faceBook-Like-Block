@@ -11,14 +11,14 @@ const Style = ({ attributes, clientId }) => {
   return (
     <style dangerouslySetInnerHTML={{
       __html: `      
-       
      
       ${mainSl}{
         display: grid;
-        justify-content: ${alignment};
+        justify-content:${alignment};
       }
+
       ${mainCt}{
-        padding: ${getBoxValue(padding)}; 
+        padding:${getBoxValue(padding)}; 
       }`,
     }}
     />

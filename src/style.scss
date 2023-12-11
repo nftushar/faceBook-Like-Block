@@ -1,13 +1,13 @@
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f5f5f5;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+// body {
+//   font-family: 'Arial', sans-serif;
+//   background-color: #f5f5f5;
+//   margin: 0;
+//   padding: 0;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+// }
 .pluginFontVerdana div{
   display: flex;
   justify-content: center;
@@ -17,11 +17,11 @@ body {
   // 4080ff Follow  | 1877f2  1877f2
 // }
 
-// .fb-button-container {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 10px;
-// } 
+.fb-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} 
 
 // .fb-like-button,
 // .fb-share-button {

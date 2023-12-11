@@ -1,5 +1,5 @@
 <?php
-class MapBlockDirectory{
+class FbButtonBlockDirectory{
 	function __construct(){
 		add_action( 'init', [$this, 'onInit'] );
 	}
@@ -31,4 +31,4 @@ class MapBlockDirectory{
 		<?php return ob_get_clean();
 	} // Render
 }
-new MapBlockDirectory();
+new FbButtonBlockDirectory();

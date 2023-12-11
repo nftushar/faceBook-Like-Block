@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name: Facebook
- * Description: responsive fb button for wordpress and more..
+ * Plugin Name: Facebook Button WP
+ * Description: responsive facebook button for wordpress and more..
  * Version: 1.0.0
  * Author: bPlugins LLC
  * Author URI: http://bplugins.com
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.txt
- * Text Domain: fb-button
+ * Text Domain: facebook-button-wp
  */
 // ABS PATH
 if ( !defined( 'ABSPATH' ) ) { exit; }

@@ -1,7 +1,7 @@
 === FB Button ===
 Contributors:  
 Donate link: https://gum.co/wpdonate/
-Tags: fb-button, FB, button 
+Tags: facebook-button-wp, FB, button 
 Requires at least: 5.0+
 Tested up to: 6.4.2
 Stable tag: 1.0.0
@@ -16,7 +16,7 @@ Short Description
 Large Description
 
 
-**[Demos](https://bblockswp.com/demo/fb-button/)**
+**[Demos](https://bblockswp.com/demo/facebook-button-wp/)**
 
 
 = Features =
@@ -24,8 +24,8 @@ Large Description
 
 
 = How to use =
-- First, install the fb-button plugin
-- Add the fb-button block from the block category called "Widgets" in the Gutenberg editor.
+- First, install the facebook-button-wp plugin
+- Add the facebook-button-wp block from the block category called "Widgets" in the Gutenberg editor.
 - You can change block settings from the right-side settings sidebar.
 - Enjoy!
 
@@ -58,25 +58,25 @@ Large Description
 
 = From Gutenberg Editor: =
 1. Go to the WordPress Block/Gutenberg Editor
-2. Search For **fb-button**
-3. Click on the **fb-button** to add the block
+2. Search For **facebook-button-wp**
+3. Click on the **facebook-button-wp** to add the block
 
 = Download & Upload: =
-1. Download the **fb-button** plugin (*.zip file*)
+1. Download the **facebook-button-wp** plugin (*.zip file*)
 2. In your admin area, go to the Plugins menu and click on **Add New**
-3. Click on **Upload Plugin** and choose the **`fb-button.zip`** file and click on **Install Now**
+3. Click on **Upload Plugin** and choose the **`facebook-button-wp.zip`** file and click on **Install Now**
 4. Activate the plugin and Enjoy!
 
 = Manually: =
-1. Download and upload the **fb-button** plugin to the **`/wp-content/plugins/`** directory
+1. Download and upload the **facebook-button-wp** plugin to the **`/wp-content/plugins/`** directory
 2. Activate the plugin through the Plugins menu in WordPress
 
 
 == Frequently Asked Questions ==
 
-= Is fb-button free? =
+= Is facebook-button-wp free? =
 
-Yes, fb-button is a free Gutenberg block plugin.
+Yes, facebook-button-wp is a free Gutenberg block plugin.
 
 = Does it work with any WordPress theme? =
 
@@ -92,12 +92,12 @@ You can use unlimited times as you want.
 
 = Where can I get support? =
 
-You can post your questions on the [support forum here](https://wordpress.org/support/plugin/fb-button/)
+You can post your questions on the [support forum here](https://wordpress.org/support/plugin/facebook-button-wp/)
 
 
 == Screenshots ==
 
-1. fb-button
+1. facebook-button-wp
 2. Settings
 
 
